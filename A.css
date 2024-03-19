@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    background: linear-gradient(to bottom, #acced4 43%, #b573d1 57%);
+}
+
+
+header{
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    padding: 20px;
+    background-color: #f0f8ff98;
+}
+
+header .navbar{
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .menu-links{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar .menu-links li a:hover{
+    color: #ffff00;
+}
+
+.subnav .subnavbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+    display: none;
+    top: 6%;
+    list-style: none;
+    text-decoration: none;
+    position: absolute;
+    line-height: 2rem;
+    color: black;
+    max-width: 300px;
+    z-index: 1;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+    transition: ease-in 5s;
+    display: block;
+}
+
+.hero-section {
+    height: 100vh;
+    background-image: url(./Pics/A2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    gap: 8rem;
+    padding: 0 20px;
+    align-items: center;
+}
+
+.hero-section .container{
+    max-width: 1200px;
+    margin: 0 140px 40px;
+}
+
+.hero-section .container h1{
+    color:  #c77b76;
+    font-size: 3.5rem;
+    max-width: 630px;
+    line-height: 65px;
+}
+
+.hero-section .container p{
+    color: #769da7;
+    font-size: 3rem;
+    max-width: 630px;
+    line-height: 35px;
+    margin-top: 15px;
+}
+
+.hero-section .content{
+    max-width: 1200px;
+    margin: 0 140px 1px;
+}
+
+.hero-section .content p{
+    color: #5c5c5c;
+    font-size: 2rem;
+    max-width: 450px;
+    line-height: 30px;
+}
+
+/* SECOND SECTION STYLING */
+
+.footer{
+    width: 100%;
+    background: linear-gradient(to bottom, #b573d1 23%, #7fbde0 95%);
+}
+
+.footer .footer-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3.5rem;
+    padding: 60px;
+}
+
+.footer-row .footer-col h4{
+    color: #fff;
+    font-size: 1.9rem;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.footer-col .Links{
+    margin-top: 20px;
+}
+
+.footer-col .Links li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.footer-col .Links li a{
+    text-decoration: none;
+    color: #bfbfbf;
+}
+
+.footer-col .Links li a:hover{
+    color: #fff;
+}
+
+.footer-col p{
+    margin: 20px 0;
+    color: #bfbfbf;
+    max-width: 30px;
+}
+
+.footer-col p{
+    margin: 20px 0;
+    color: #ffffff;
+    max-width: 300px;
+}
+
+.footer .Form{
+    background: linear-gradient(to bottom, #db9c9c 35%, #83cedb 80% );
+    width: 200px;
+    height: 40px;
+    padding-right: 20px;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    top: 145%;
+    left: 83.5%;
+    transform: translate(-50%, -50%)
+}
+
+input{
+    all: unset;
+    font: 8px ;
+    color: #fff;
+    font-family: cursive;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+}
+
+::placeholder{
+    color: #fff;
+    width: 250px;
+    font-family: cursive;
+    opacity: 10
+}
+
+.footer-row .footer-col .Form .button{
+    background: #fff;
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    right: -55%;
+    position: absolute;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.footer-col .icons{
+    display: flex;
+    margin-top: 30px;
+    gap: 30px;
+    cursor: pointer;
+}
+
+.footer-col .icons i{
+    color: #afb6c7;
+}
+
+.footer-col .icons i:hover{
+    color: #fff;
+}

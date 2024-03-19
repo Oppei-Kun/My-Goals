@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background: linear-gradient(to bottom, #5b59d6, #d8e05b, #8dec67);
+}
+
+header{
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    padding: 20px;
+    background-color: #f0f8ff98;
+}
+
+header .navbar{
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .menu-links{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar .menu-links li a:hover{
+    color: #ffff00;
+}
+
+.subnav .subnavbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+    display: none;
+    top: 6%;
+    list-style: none;
+    text-decoration: none;
+    position: absolute;
+    line-height: 2rem;
+    color: black;
+    max-width: 300px;
+    z-index: 1;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+    display: block;
+}
+
+.card-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,
+    minmax(300px, 1fr) );
+    max-width: 1250px;
+    margin: 150px auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+.card-list .card-item{
+    background: linear-gradient(to bottom, #7691ec 23%, #ee704a 95%);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+    list-style: none;
+    cursor: pointer;
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition: border 0.2s ease-out;
+
+}
+
+.card-list .card-item:hover {
+    border: 3px solid #e6e6e6;
+}
+
+.card-list .card-item img{
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.card-list span{
+    display: inline-block;
+    background: #f7dff5;
+    margin-top: 32px;
+    padding: 8px 15px;
+    font-size: o,8rem;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+.card-list .developer{
+    background: #f7dff5;
+    color: #b22;
+}
+
+.card-list .designer{
+    background: #d1e8ff;
+    color: #2968a8;
+}
+
+.card-list .editor{
+    background: #d6f8d6;
+    color: #205c20;
+}
+
+.card-item p{
+    color: #ffffff;
+    font-size: 1rem;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.card-item .arrow{
+    display: flex;
+    align-items: center;
+    transform: rotate(-35deg);
+    height: 40px;
+    width: 40px;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 50%;
+    margin-top: 40px;
+    transition: 0.2s ease;
+}
+
+.card-list .card-item:hover .arrow{
+    background: #9b9adf;
+    color: #fff;
+}
